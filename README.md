@@ -9,10 +9,10 @@ Within the config file add:
 
 Within the 'onPrepare' function of the protractor configuration, add the following:
 
-     return browser.getCapabilities().then(function (caps) {
+     return browser.getCapabilities().then(function (capabilities) {
 
-            var browserName = caps.caps_.browserName.toUpperCase();
-            var browserVersion = caps.caps_.version;
+            var browserName = capabilities.get('browserName');
+            var browserVersion = capabilities.get('version');
 
             var jasmineTrxConfig = {
                 reportName: 'my favorite test suite',
@@ -35,6 +35,6 @@ Within the 'onPrepare' function of the protractor configuration, add the followi
  
 ##### Example package.json dependencies
        "devDependencies": {
-         "protractor": "3.0.0",
-         "jasmine-trx-reporter": "2.0.0"
+         "protractor": "5.1.2",
+         "jasmine-trx-reporter": "2.2.3"
        }

@@ -1,6 +1,6 @@
 {
   "name": "jasmine-trx-reporter",
-  "version": "2.2.2",
+  "version": "2.2.3",
   "description": "Jasmine reporter for generating TRX files",
   "main": "./src/index.js",
   "scripts": {
@@ -29,6 +29,10 @@
     {
       "name": "Greg Pepin",
       "email": "pepin.greg@gmail.com"
+    },
+    {
+      "name": "David Wright",
+      "email": "mrdwright@shaw.ca"
     }
   ],
   "bugs": {
